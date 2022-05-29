@@ -1,0 +1,235 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+	background-color:black ;
+}
+a:focus, a:hover {
+	font-style: italic;
+	color:red;
+}
+h1:hover {
+	color: red;
+	font-size: italic;
+  }
+  p:hover{
+	  color: white;
+  }
+  
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #fcba03;
+	
+		background-image: -moz-linear-gradient(
+	    30deg, #4665bb 0%, white 30%, rgb(170, 176, 194) 50%, #fffded 80%, #1c9640 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #4665bb 0%, white 30%, rgb(193, 195, 211) 50%, #fffded 80%, #1c9640 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #4665bb 0%, white 30%, rgb(172, 181, 201) 50%, #fffded 80%, #1c9640 100%);
+	background-image: linear-gradient(
+	    30deg, #4665bb 0%, white 30%, rgb(196, 200, 218) 50%, #fffded 80%, #1c9640 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: black;
+	text-align: center;
+}
+
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+	color: rgba(255, 0, 106, 0.897);
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	position: relative;
+
+	
+}
+#nav_menu a:hover{
+	color: red;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li li {
+	padding-left: 10em;
+	padding-top:.2em;
+}
+#nav_menu ul li ul li  a{
+	width: 200px;
+	height: 10px;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 333px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the main content */
+main {
+	clear: right;
+	
+}
+
+
+  
+/* the styles for the section */
+section {
+	width: 520px;
+	float: right;
+	padding-left: 0px;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin-top: 2px;
+	border-bottom: 1px solid red;
+	text-align:  #030303 ;
+	color: yellow;
+
+	}
+.zoom{
+	padding: 0px;
+	transition: .2s;
+	width: 100px;
+	margin: 0 auto;
+display: inline-block;
+	inline-size: 150px;
+	border: 1 px solid beige;
+
+
+}
+.zoom:hover{
+	transform: scale(1.2);
+}
+
+  
+ p{
+ border:1px solid red;
+ margin-top: 10px;
+ margin-right: 12px;
+ margin-bottom: 20px;
+ padding : 17px;
+ color: chartreuse;
+ 
+}
+section img{
+	
+	padding-top: 1px;
+	float: none;
+	padding-right: 0px;
+	border:1px solid #1c9640;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+}
+section h3{
+	color: #fffded;
+}
+section video{
+	padding: 0px;
+	border: 1px solid #1c9640 ;
+}
+
+
+
+/* the styles for the aside */
+aside {
+	width: 215px;
+	float: left;
+	padding: 25px 5px 20px 20px;
+	background-color: chartreuse;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	
+
+}
+aside h2 {
+	color: black;
+	font-size: 160%;
+	padding-top: 0px;
+	border-bottom:1px solid black;
+	margin-top: 0px;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+	padding-top: 10px;
+	color: black;
+	margin-top: 1px;
+}
+aside h3 a{
+	color: green;
+}
+	
+aside img {
+		padding-bottom: 0em;
+		border: 1px solid black;
+		
+
+}
+
+/* the styles for the footer */
+footer {
+	background-color:blue;
+	clear: both;
+	
+	
+	widows: 100px;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+	margin-bottom: 0px;
+	border: none;
+	
+}
